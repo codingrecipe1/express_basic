@@ -49,3 +49,18 @@ Content-Type: application/json; charset=UTF-8
 ###
 get http://localhost:8000/list
 
+# localhost:8000/1
+###
+get http://localhost:8000/5
+
+# localhost:8000/1
+###
+put http://localhost:8000/1
+Content-Type: application/json; charset=UTF-8
+
+{
+    "id": 1,
+    "name": "대한민국",
+    "capital": "서울",
+    "population": 52000000
+}
