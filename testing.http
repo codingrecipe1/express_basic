@@ -64,3 +64,6 @@ Content-Type: application/json; charset=UTF-8
     "capital": "서울",
     "population": 52000000
 }
+
+###
+delete http://localhost:8000/4

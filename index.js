@@ -103,3 +103,14 @@ app.put("/:id", (req, res) => {
         res.status(200);
     });
 });
+
+app.delete("/:id", (req, res) => {
+    const id = req.params.id;
+    const sql = "delete from nations_table where id=?";
+    db.query(sql, [id], (err, results, fields) => {
+        console.log("err", err);
+        console.log("results", results);
+        console.log("fields", fields);
+
+    });
+});
