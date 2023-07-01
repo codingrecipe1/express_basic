@@ -2,3 +2,7 @@ get http://localhost:8000/
 
 ###
 get http://localhost:8000/hello
+
+###
+get http://localhost:8000/qs?p1=aa&p2=bb
+

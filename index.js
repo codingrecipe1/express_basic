@@ -17,3 +17,12 @@ app.get("/", () => {
 app.get("/hello", () => {
     console.log("hello 주소 요청");
 });
+
+// query string 받기
+app.get("/qs", (req) => {
+    console.log(req.query);
+    console.log(req.query.p1);
+    console.log(req.query.p2);
+});
+
+
