@@ -8,3 +8,7 @@ npm install [dependency 이름]
 - json: json 파싱 
 - body-parser: 요청 body 받기 
 - nodemon: index.js 저장시 서버 새로고침
+
+# api 테스트
+- postman 
+- REST Client (vs code extension)

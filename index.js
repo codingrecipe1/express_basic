@@ -7,3 +7,13 @@ const app = express();
 app.listen(8000, () => {
     console.log("8000 서버 호출");
 });
+
+// 기본 주소 요청 
+// localhost:8000/
+app.get("/", () => {
+    console.log("기본주소 요청");
+});
+
+app.get("/hello", () => {
+    console.log("hello 주소 요청");
+});
