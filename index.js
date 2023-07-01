@@ -52,3 +52,14 @@ app.post("/post-req", (req) => {
     const { name, age } = req.body;
     console.log(`name: ${name}, age: ${age}`);
 });
+
+app.post("/save", (req) => {
+    const { name, capital, population } = req.body;
+    console.log(`name: ${name}, capital: ${capital}, population: ${population}`);
+    const sql = "insert into nations_table(name, capital, population) values(?,?,?)";
+    db.query(sql, [name, capital, population], (err, results, fields) => {
+        console.log("err", err);
+        console.log("results", results);
+        console.log("fields", fields);
+    });
+});

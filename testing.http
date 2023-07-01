@@ -19,3 +19,29 @@ Content-Type: application/json; charset=UTF-8
     "name": "이름입니다",
     "age": 11
 }
+
+###
+post http://localhost:8000/save
+Content-Type: application/json; charset=UTF-8
+
+# {
+#     "name": "대한민국",
+#     "capital": "서울",
+#     "population": 51200000
+# }
+# {
+#     "name": "프랑스",
+#     "capital": "파리",
+#     "population": 67750000
+# }
+# {
+#     "name": "호주",
+#     "capital": "캔버라",
+#     "population": 25690000
+# }
+{
+    "name": "미국",
+    "capital": "워싱턴DC",
+    "population": 331900000
+}
+
