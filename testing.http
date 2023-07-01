@@ -45,3 +45,7 @@ Content-Type: application/json; charset=UTF-8
     "population": 331900000
 }
 
+# localhost:8000/list
+###
+get http://localhost:8000/list
+

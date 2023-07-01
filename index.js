@@ -63,3 +63,14 @@ app.post("/save", (req) => {
         console.log("fields", fields);
     });
 });
+
+app.get("/list", (req, res) => {
+    const sql = "select * from nations_table";
+    db.query(sql, (err, results, fields) => {
+        console.log("err", err);
+        console.log("results", results);
+        console.log("fields", fields);
+        res.json(results);
+    });
+});
+
